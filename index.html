@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calm Time Table Maker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME PAGE -->
+<section id="home-section" class="page">
+    <h1>Time Table Maker</h1>
+    <button onclick="goToCategory()">Start</button>
+</section>
+
+<!-- CATEGORY PAGE -->
+<section id="category-section" class="page hidden">
+    <h2>Hey! Please choose your category</h2>
+    <button onclick="showAcademic()">Academics</button>
+    <button onclick="showLiving()">Daily Living</button>
+</section>
+
+<!-- ACADEMIC PAGE -->
+<section id="academic-section" class="page hidden academic-ui">
+    <h2>Academic Planner</h2>
+
+    <input type="text" id="acad-subject" placeholder="Subject Name">
+    <input type="number" id="acad-hours" placeholder="Hours">
+    <button onclick="addAcademic()">Add</button>
+
+    <div id="acad-list"></div>
+</section>
+
+<!-- LIVING PAGE -->
+<section id="living-section" class="page hidden living-ui">
+    <h2>Daily Living Planner</h2>
+
+    <input type="text" id="live-task" placeholder="Task Name">
+    <input type="number" id="live-hours" placeholder="Hours">
+    <button onclick="addLiving()">Add</button>
+
+    <div id="live-list"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
